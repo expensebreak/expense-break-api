@@ -41,5 +41,8 @@
       "node": true,
       "mocha": true
     }
+  },
+  "engines": {
+    "node": "8.7.0"
   }
 }
