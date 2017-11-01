@@ -1,8 +1,10 @@
 const mongoose = require('mongoose')
 
+mongoose.Promise = global.Promise
+
 const sheetSchema = new mongoose.Schema({
-    name: String,
-    category: String
+  name: String,
+  category: String
 })
 
-module.exports = mongoose.model('Sheet', sheetSchema)
+exports = module.exports = mongoose.model('Sheet', sheetSchema)
